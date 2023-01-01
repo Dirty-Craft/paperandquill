@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "paper_and_quill",
+  "version": "${version}",
+
+  "name": "Paper and Quill",
+  "description": "This mod adds Paper and Quill to the game",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Dirty-Craft/paper-and-quill/",
+    "sources": "https://github.com/Dirty-Craft/paper-and-quill/"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/paper_and_quill/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.example.ExampleMod"
+    ]
+  },
+  "mixins": [
+    "paper_and_quill.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
