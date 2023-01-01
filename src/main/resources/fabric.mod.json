@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "paper_and_quill",
+  "id": "paper-and-quill",
   "version": "${version}",
 
   "name": "Paper and Quill",
@@ -14,16 +14,16 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/paper_and_quill/icon.png",
+  "icon": "assets/paper-and-quill/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.fabricmc.example.PaperAndQuill"
     ]
   },
   "mixins": [
-    "paper_and_quill.mixins.json"
+    "paper-and-quill.mixins.json"
   ],
 
   "depends": {
