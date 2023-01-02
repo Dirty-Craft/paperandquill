@@ -1,4 +1,4 @@
-package net.fabricmc.example;
+package net.dirtycraft.paperandquill;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;

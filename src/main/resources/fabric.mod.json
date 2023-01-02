@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.PaperAndQuill"
+      "net.dirtycraft.paperandquill.PaperAndQuill"
     ]
   },
   "mixins": [
