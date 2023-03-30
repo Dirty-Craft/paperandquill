@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "paper_and_quill:item/paper_and_quill"
+    "layer0": "paperandquill:item/paperandquill"
   }
 }

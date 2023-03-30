@@ -9,11 +9,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class PaperAndQuill implements ModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger("paper-and-quill");
+	public static final Logger LOGGER = LoggerFactory.getLogger("paperandquill");
 
 	public static final PaperAndQuillItem PAPER_AND_QUILL_ITEM = Registry.register(
 			Registry.ITEM,
-			new Identifier("paper_and_quill", "paper_and_quill"),
+			new Identifier("paperandquill", "paperandquill"),
 			new PaperAndQuillItem(new FabricItemSettings().group(ItemGroup.MISC))
 	);
 

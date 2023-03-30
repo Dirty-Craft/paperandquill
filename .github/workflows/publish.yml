@@ -1,0 +1,27 @@
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  publish-to-curseforge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: 17
+          distribution: 'temurin'
+      - name: Build the JAR
+        run: |
+          ./gradlew build
+      - name: Upload the mod to the CurseForge
+        uses: itsmeow/curseforge-upload@v3
+        id: upload_main_file
+        with:
+          file_path: "build/libs/paperandquill-0.0.1.jar"
+          game_endpoint: "minecraft"
+          game_versions: "9366"
+          project_id: "${{ secrets.CF_PROJECT_ID }}"
+          token: "${{ secrets.CF_API_TOKEN }}"
